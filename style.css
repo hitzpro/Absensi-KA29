@@ -1,0 +1,113 @@
+/* Import Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset Margin dan Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+/* Card Style */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+/* Title */
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Signature Canvas */
+#signatureCanvas {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%; /* Canvas lebar penuh */
+  height: 300px; /* Ukuran tinggi yang lebih besar */
+}
+
+/* File Upload */
+#photoInput {
+  font-size: 14px;
+}
+
+/* Tombol */
+button {
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 48%; /* Tombol akan lebar, menyesuaikan dengan lebar container */
+}
+
+/* Clear Button */
+.btn-danger {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Margin untuk Buttons */
+button + button {
+  margin-left: 4%;
+}
+
+/* Responsiveness untuk Mobile */
+@media (max-width: 767px) {
+  .card-body {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #signatureCanvas {
+    height: 250px;
+  }
+
+  button {
+    width: 100%; /* Tombol menjadi penuh di layar kecil */
+    margin-top: 10px;
+  }
+}
